@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+html, body {height: 100%; }
+body{
+	background: url(../img/bg.jpg) red repeat-y;
+    font-family: 'Lato', sans-serif;
+    background-position: top;
+    background-size: auto;
+}
+
+.main_content_area {
+    text-align: center;
+    padding-top: 18%;
+}
+@media (min-width: 1080px ) {
+.main_content_area {
+    min-height: 560px;
+}
+}
+
+/*Counter CSS
+====================*/
+.pledge_counter_area {
+    margin: 10px auto;
+    padding: 15px;
+    background: #00000030;
+    border-radius: .4em;
+}
+
+p.counter {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    font-size: 54px;
+    color: #ccc;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 5px;
+}
+/*Small logo area*/
+.small-logo {
+    padding-top: 5%;
+}
+
+.small-logo .logo_area img {
+    max-width:  200px;
+}
+/*=====================*/
+
+.logo_area {
+    padding: 5px;
+}
+.logo_area img {
+    max-width: 250px;
+    height: auto;
+}
+.pledge_area button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+.pledge_content_area {
+    margin: 10px auto;
+    padding: 35px;
+    background: #00000030;
+    border-radius: .4em;
+}
+
+.pledge_area {
+    padding: 5px;
+    /* min-width: 420px; */
+}
+input#email, input#name {
+    background: #0000005f;
+    border-color: #a0a0a0dd;
+    color: #fff;
+}
+button.paedge-button {
+    color: #fff;
+    border-color: #fff;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: .3rem;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    line-height: 100%;
+}
+#paedge-button:hover {
+    background: #ffffff22;
+}
+.paedge-button:focus {
+    outline:  none;
+}
+
+p.or {
+    margin: 5px;
+}
+
+
+.pledge-group-two {
+    display: none;
+}
+/*Footer CSS
+================*/
+
+.footer-area {
+    min-height: 85px;
+    position:  relative;
+}
+.footer-area a {
+    position:  absolute;
+    bottom:  0px;
+    padding: 15px;
+    color:  #fff;
+    text-transform: uppercase;
+    font-size: 18.5px;
+    opacity:  0.5;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-area a:hover {
+    opacity: 1;
+}
+
+
+/*Social Button CSS
+=========================*/
+.paedge-with-fb {
+    background: #4267B2;
+    color: #fff;
+    border-color: #4267B2;
+    letter-spacing: 3px;
+}
+
+.paedge-with-twitter {
+    background: #1DA1F2;
+    color: #fff;
+    border-color: #1DA1F2;
+    letter-spacing: 3px;
+}
+
+.paedge-with-google {
+    background: #EA4335;
+    color: #fff;
+    border-color: #EA4335;
+    letter-spacing: 3px;
+}
+
+.paedge-with-fb:hove, 
+.paedge-with-twitter:hover, 
+.paedge-with-google:hover, 
+.back-to-social:hover {
+    color: #ccc;
+}
+
+/*Pledge Confurmation
+------------------------*/
+.pledge-confurmation p {
+    margin: 0;
+    color: #fff;
+}
+
+a.ytp-watermark.yt-uix-sessionlink {
+    display: none !important;
+    pointer-events: none !important;
+}
+
+.paedge-confurmation {
+    margin-top: 15px;
+}
+.paedge-skip {
+    color: #ccc;
+}
+.confurmation-page {
+    padding-top:  1%;
+}
+.confurmation-page .logo_area img {
+    max-width:  180px;
+}
+
+.pledge-group-three{
+    display: none;
+}
+.continue-btn-area{
+    padding-top: 10px;
+    display: none;
+}
+
+/*Responsive CSS
+======================*/
+
+@media (max-width: 992px) { 
+.confurmation-page {
+    padding-top:  5%;
+}
+
+ }
+
+@media (max-width: 767px) { 
+.confurmation-page {
+    padding-top:  8%;
+}
+}
+
+@media (max-width: 575px) { 
+.confurmation-page {
+    padding-top:  18%;
+}
+
+ }
+
+@media (min-width: 1200px) { 
+
+ }

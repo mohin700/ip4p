@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>I Pledge 4 Peace</title>
+  </head>
+  <body>
+    <div class="full_screen_area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="main_content_area confurmation-page">
+              <div class="logo_area">
+                <a href="index.html"><img src="assets/img/logo-w.png" alt="I pledge"></a>
+              </div> <!-- .logo_area -->
+          
+              <div class="pledge_area">
+                
+                <div class="pledge-confurmation">
+                  <div class="_pledge_content_area">
+                    <p class="pledge-success"><span class="text-success">Congratulations . . !!! </span> You have Successfully Pledged.</p>
+                    <p style="margin-bottom: 10px;"><strong class="text-info">Note: </strong> tag line</p>
+					<div class="embed-responsive embed-responsive-16by9">	
+						<div id="player"></div>
+					</div>	
+                    <div class="continue-btn-area">
+                      <button type="button" href="#" class="btn btn-primary btn-right continue-btn">Continue </button>
+                    </div>
+                   
+                  </div> <!-- .pledge_content_area -->
+                </div> <!-- .pledge-group-two -->
+          
+              </div> <!-- .pledge_area -->
+            </div> <!-- .main_content_area -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- .full_screen_area -->
+
+
+    <script src="http://www.youtube.com/player_api"></script>
+
+    <script>
+
+        // create youtube player
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+              width: '100%',
+              height: '390',
+              videoId: 'ZNA51WDpGHc',
+              playerVars: { 'autoplay': 1, 'controls': 0, 'rel': 0 , 'showinfo': 0},
+              endSeconds: 30,
+              events: {
+                onReady: onPlayerReady,
+                onStateChange: onPlayerStateChange
+              }
+            });
+        }
+
+        // autoplay video
+        function onPlayerReady(event) {
+            event.target.playVideo();
+            event.target.setVolume(100);
+        }
+
+        // when video ends
+        function onPlayerStateChange(event) {        
+            if(event.data === 0) {          
+                $(".continue-btn-area").show(100);
+            }
+        }
+
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
